@@ -132,8 +132,8 @@ class FlashCard:
 
 
 parser = argparse.ArgumentParser(description="This program creates flashcards to improve your learning process")
-parser.add_argument("-i", "--import_from")
-parser.add_argument("-e", "--export_to")
+parser.add_argument("-i", "--import_from", help="Specify the file from which you want to import flashcards")
+parser.add_argument("-e", "--export_to", help="Specify the file to which you want to export flashcards")
 args = parser.parse_args()
 f = FlashCard()
 if args.import_from:
